@@ -1,0 +1,2 @@
+module fire.safety {
+}
