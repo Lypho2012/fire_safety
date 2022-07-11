@@ -1,3 +1,4 @@
+import 'package:fire_safety/pages/quiz/home_exterior_quiz_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -9,10 +10,19 @@ class QuizPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text(title)),
-        body: Center(
-            child: TextButton(onPressed: () {},
-                child: const Text('Next'))
+        body: Padding(
+          padding: EdgeInsets.only(top: 100),
+          child: Column(
+              children: [
+                Text('Quiz'),
+                Center(child: TextButton(
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) {
+                        return const HomeExteriorQuizPage();
+                      }));
+                    },
+                    child: const Text('Start')))
+              ])
         )
     );
   }
