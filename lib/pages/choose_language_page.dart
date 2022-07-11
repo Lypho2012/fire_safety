@@ -15,42 +15,45 @@ class _ChooseLanguagePage extends State<ChooseLanguagePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-          children: [
-            Text('Welcome!'),
-            Text('Choose a language to continue in:'),
-            ListTile(
-                title: const Text('English'),
-                leading: Radio<SingingCharacter>(
-                  value: SingingCharacter.english,
-                  groupValue: _character,
-                  onChanged: (SingingCharacter? value) {
-                    setState(() {
-                      _character = value;
-                    });
-                  },
-                ),
-            ),
-            ListTile(
-              title: const Text('Spanish'),
-              leading: Radio<SingingCharacter>(
-                value: SingingCharacter.spanish,
-                groupValue: _character,
-                onChanged: (SingingCharacter? value) {
-                  setState(() {
-                    _character = value;
-                  });
-                },
-              ),
-            ),
-            TextButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return const QuizPage(title: 'QuizPage');
-                  }));
-                },
-                child: const Text('Next'))
-          ])
+        body: Padding(
+            padding: EdgeInsets.only(top:100),
+            child: Column(
+                children: [
+                  Text('Welcome!'),
+                  Text('Choose a language to continue in:'),
+                  ListTile(
+                    title: const Text('English'),
+                    leading: Radio<SingingCharacter>(
+                      value: SingingCharacter.english,
+                      groupValue: _character,
+                      onChanged: (SingingCharacter? value) {
+                        setState(() {
+                          _character = value;
+                        });
+                      },
+                    ),
+                  ),
+                  ListTile(
+                    title: const Text('Spanish'),
+                    leading: Radio<SingingCharacter>(
+                      value: SingingCharacter.spanish,
+                      groupValue: _character,
+                      onChanged: (SingingCharacter? value) {
+                        setState(() {
+                          _character = value;
+                        });
+                      },
+                    ),
+                  ),
+                  TextButton(
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                          return const QuizPage(title: 'QuizPage');
+                        }));
+                      },
+                      child: const Text('Next'))
+                ])
+        )
     );
   }
 }
