@@ -14,6 +14,7 @@ class LaundryRoomQuizPage extends StatefulWidget {
   State<LaundryRoomQuizPage> createState() => _LaundryRoomQuizPage();
 }
 List<bool> isChecked = List<bool>.filled(3, false);
+int numCheckboxes = 3;
 class _LaundryRoomQuizPage extends State<LaundryRoomQuizPage> {
 
   @override
@@ -23,15 +24,31 @@ class _LaundryRoomQuizPage extends State<LaundryRoomQuizPage> {
             padding: EdgeInsets.only(top: 100),
             child: ListView(
                 children: [
-                  Padding(
-                      padding: EdgeInsets.only(left: 20),
-                      child: Text(AppLocalizations.of(context)!.laundry_room_quiz_page_title,textScaleFactor: 3)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Padding(
+                          padding: EdgeInsets.only(left: 20),
+                          child: Text(AppLocalizations.of(context)!.laundry_room_quiz_page_title,textScaleFactor: 3)
+                      ),
+                      Padding(
+                          padding: EdgeInsets.only(right: 20),
+                          child: TextButton(
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                  return const HeatingEquipmentQuizPage();
+                                }));
+                                total -= numCheckboxes;
+                              },
+                              child: const Text('Skip (I don\'t have one)'))
+                      )
+                    ],
                   ),
                   Padding(
                       padding: EdgeInsets.only(right: 20),
                       child: Align(
                           alignment: Alignment.topRight,
-                          child: Text("Score: $counter / 41")
+                          child: Text("Score: $counter / $total")
                       )
                   ),
                   CheckboxListTile(
