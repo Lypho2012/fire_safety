@@ -1,6 +1,58 @@
 {
-    "helloWorld": "Hello World!",
-    "@helloWorld": {
-      "description": "The conventional newborn programmer greeting"
-    }
+    "home_exterior_quiz_page_title": "Home Exterior",
+    "home_exterior_quiz_page_checkbox1": "Ensure home address numbers are a minimum of 4 inches tall and clearly visible from the street",
+    "home_exterior_quiz_page_checkbox2": "For homes located more than 50 feet from the street, post address numbers at the driveway entrance",
+    "home_exterior_quiz_page_checkbox3": "Trim trees away from overhead electrical wires and chimney",
+    "home_exterior_quiz_page_checkbox4": "Remove leaves/debris from roof, eaves and gutters",
+
+    "smoke_alarms_quiz_page_title": "Smoke Alarms",
+    "smoke_alarms_quiz_page_checkbox1": "Different types of smoke alarms, ionization and photoelectric, detect fire in different ways. Experts recommend having both types in your home",
+    "smoke_alarms_quiz_page_checkbox2": "A combination of working smoke alarms and fire sprinklers decreases the risk of dying",
+    "smoke_alarms_quiz_page_checkbox3": "Smoke alarms are tested each month",
+    "smoke_alarms_quiz_page_checkbox4": "Smoke alarm batteries are changed as need (annually unless they are life long)",
+    "smoke_alarms_quiz_page_checkbox5": "Smoke alarms are on every level of the home",
+    "smoke_alarms_quiz_page_checkbox6": "Smoke alarms are inside and outside sleeping areas",
+    "smoke_alarms_quiz_page_checkbox7": "Smoke alarms are less than 10 years old",
+    "smoke_alarms_quiz_page_checkbox8": "Install adaptive smoke alarms for occupants with special needs",
+
+    "co_alarms_quiz_page_title": "CO Alarms",
+    "co_alarms_quiz_page_checkbox1": "Test CO alarms once a month (use a broom handle to reach ceiling mounted units)",
+    "co_alarms_quiz_page_checkbox2": "Carbon monoxide alarms are located on each level of the home",
+    "co_alarms_quiz_page_checkbox3": "Carbon monoxide alarms are less than 7 years old",
+    "co_alarms_quiz_page_checkbox4": "Install CO alarms in a central location outside sleeping area an on every level of the home",
+    "co_alarms_quiz_page_checkbox5": "Install adaptive CO alarms for occupants with special needs",
+
+    "electricity_appliances_quiz_page_title": "Electricity and Appliances",
+    "electricity_appliances_quiz_page_checkbox1": "Do not overload electrical outlets; additional outlets should be installed by a qualified electrician",
+    "electricity_appliances_quiz_page_checkbox2": "Inspect electrical cords for damage; electrical cords should never be frayed, cracked, pinned to the wall or placed under rugs",
+    "electricity_appliances_quiz_page_checkbox3": "Maintain air space around electrical equipment (TV, DVD, etc.)",
+    "electricity_appliances_quiz_page_checkbox4": "All plug outlets are safe and do not feel warm when you touch them",
+    "electricity_appliances_quiz_page_checkbox5": "Large and small appliances are plugged directly into wall outlets",
+    "electricity_appliances_quiz_page_checkbox6": "Purchase and use extension cords with the surge protector safety feature",
+    "electricity_appliances_quiz_page_checkbox7": "Gas appliance vents are blocked by sheet metal",
+    "electricity_appliances_quiz_page_checkbox8": "Kitchen and bathroom outlets that are near countertop surfaces within 6 feet of running water should have a Ground Fault Circuit Interrupter outlet",
+    "electricity_appliances_quiz_page_checkbox9": "Light bulbs meet the recommended wattage of each fixture",
+    "electricity_appliances_quiz_page_checkbox10": "Incandescent lights are not exposed, do not have a shade closer than 12 inches, and are at least 12 inches from combustibles",
+    "electricity_appliances_quiz_page_checkbox11": "If there are young children in the home, install tamper-resistant outlets or outlet safety covers",
+
+    "laundry_room_quiz_page_title": "Laundry Room",
+    "laundry_room_quiz_page_checkbox1": "People clean the dryer of lint after every use",
+    "laundry_room_quiz_page_checkbox2": "There is no lint build-up in the exhaust duct or behind the dryer",
+    "laundry_room_quiz_page_checkbox3": "Foil or plastic accordion-type ducting material has been replaced with rigid or semi-rigid metal duct",
+
+    "heating_equipment_quiz_page_title": "Heating Equipment",
+    "heating_equipment_quiz_page_checkbox1": "Do not use propane heaters inside the home or use the oven to heat the home",
+    "heating_equipment_quiz_page_checkbox2": "Replace furnace filters annually",
+    "heating_equipment_quiz_page_checkbox3": "“3 feet from the heat.” Furniture, curtains, dish towels, and anything that could catch fire are at least 3 feet from any type of heat source",
+    "heating_equipment_quiz_page_checkbox4": "Ensure space heaters are equipped with an automatic shut-off function",
+    "heating_equipment_quiz_page_checkbox5": "Areas around furnace, oil burner, wood stove, and other heat-generation equipment are clear of debris, combustible materials, and rags",
+
+    "living_rooms_and_bedrooms_quiz_page_title": "Living Rooms and Bedrooms",
+    "living_rooms_and_bedrooms_quiz_page_checkbox1": "Closet lights have covers (not just a bare bulb)",
+    "living_rooms_and_bedrooms_quiz_page_checkbox2": "Furniture meets updated recommendations for fire-resistant upholstery",
+    "living_rooms_and_bedrooms_quiz_page_checkbox3": "Mattresses were made after 1973",
+    "living_rooms_and_bedrooms_quiz_page_checkbox4": "Each bedroom has an escape ladder that all members of the family know how to use",
+    "living_rooms_and_bedrooms_quiz_page_checkbox5": "Electric blankets are UL-approved, with cords in solid condition",
+
+    "home_page_title": "Home Page"
 }
