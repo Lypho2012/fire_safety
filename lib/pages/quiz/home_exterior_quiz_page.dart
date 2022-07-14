@@ -4,14 +4,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 class HomeExteriorQuizPage extends StatefulWidget {
   const HomeExteriorQuizPage({Key? key}) : super(key: key);
 
   @override
   State<HomeExteriorQuizPage> createState() => _HomeExteriorQuizPage();
 }
+List<bool> isChecked = List<bool>.filled(4, false);
 class _HomeExteriorQuizPage extends State<HomeExteriorQuizPage> {
-  List<bool> isChecked = List<bool>.filled(4, false);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,10 +22,14 @@ class _HomeExteriorQuizPage extends State<HomeExteriorQuizPage> {
           child: ListView(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(right: 50),
+                  padding: EdgeInsets.only(left: 20),
+                  child: Text(AppLocalizations.of(context)!.home_exterior_quiz_page_title,textScaleFactor: 3)
+                ),
+                Padding(
+                  padding: EdgeInsets.only(right: 20),
                   child: Align(
                       alignment: Alignment.topRight,
-                      child: Text(counter.toString())
+                      child: Text("Score: $counter / 41")
                   )
                 ),
                 CheckboxListTile(
@@ -90,13 +96,19 @@ class _HomeExteriorQuizPage extends State<HomeExteriorQuizPage> {
                     },
                     controlAffinity: ListTileControlAffinity.leading
                 ),
-                TextButton(
-                    onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) {
-                        return const SmokeAlarmsQuizPage();
-                      }));
-                    },
-                    child: const Text('Next'))
+                Padding(
+                    padding: EdgeInsets.only(right: 20),
+                    child: Align(
+                        alignment: Alignment.topRight,
+                        child: TextButton(
+                            onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                return const SmokeAlarmsQuizPage();
+                              }));
+                            },
+                            child: const Text('Next'))
+                    )
+                )
               ])
         )
     );
