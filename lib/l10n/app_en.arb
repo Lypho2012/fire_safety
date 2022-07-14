@@ -54,5 +54,8 @@
     "living_rooms_and_bedrooms_quiz_page_checkbox4": "Each bedroom has an escape ladder that all members of the family know how to use",
     "living_rooms_and_bedrooms_quiz_page_checkbox5": "Electric blankets are UL-approved, with cords in solid condition",
 
-    "home_page_title": "Home Page"
+    "home_page_title": "Home",
+    "notifications_page_title": "Notifications",
+    "settings_page_title": "Settings",
+    "home_checklist_page_title": "Home"
 }
