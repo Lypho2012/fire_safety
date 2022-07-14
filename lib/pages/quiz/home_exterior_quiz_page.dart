@@ -12,6 +12,7 @@ class HomeExteriorQuizPage extends StatefulWidget {
   State<HomeExteriorQuizPage> createState() => _HomeExteriorQuizPage();
 }
 List<bool> isChecked = List<bool>.filled(4, false);
+int numCheckboxes = 4;
 class _HomeExteriorQuizPage extends State<HomeExteriorQuizPage> {
 
   @override
@@ -21,15 +22,31 @@ class _HomeExteriorQuizPage extends State<HomeExteriorQuizPage> {
           padding: EdgeInsets.only(top: 100),
           child: ListView(
               children: [
-                Padding(
-                  padding: EdgeInsets.only(left: 20),
-                  child: Text(AppLocalizations.of(context)!.home_exterior_quiz_page_title,textScaleFactor: 3)
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Padding(
+                        padding: EdgeInsets.only(left: 20),
+                        child: Text(AppLocalizations.of(context)!.home_exterior_quiz_page_title,textScaleFactor: 3)
+                    ),
+                    Padding(
+                        padding: EdgeInsets.only(right: 20),
+                        child: TextButton(
+                            onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                return const SmokeAlarmsQuizPage();
+                              }));
+                              total -= numCheckboxes;
+                            },
+                            child: const Text('Skip (I live in an apartment)'))
+                    )
+                  ],
                 ),
                 Padding(
                   padding: EdgeInsets.only(right: 20),
                   child: Align(
                       alignment: Alignment.topRight,
-                      child: Text("Score: $counter / 41")
+                      child: Text("Score: $counter / $total")
                   )
                 ),
                 CheckboxListTile(
