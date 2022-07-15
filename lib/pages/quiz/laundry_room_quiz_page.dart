@@ -1,4 +1,4 @@
-import 'package:fire_safety/pages/quiz/heating_equipment_quiz_page.dart';
+import 'package:fire_safety/pages/quiz/electricity_and_appliances_quiz_page.dart';
 import 'package:fire_safety/pages/quiz/smoke_alarms_quiz_page.dart';
 import 'package:fire_safety/pages/quiz_page.dart';
 import 'package:flutter/material.dart';
@@ -6,16 +6,16 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-import '../home_page.dart';
-import 'electricity_and_appliances_quiz_page.dart';
-class LivingRoomsAndBedroomsQuizPage extends StatefulWidget {
-  const LivingRoomsAndBedroomsQuizPage({Key? key}) : super(key: key);
+import 'heating_equipment_quiz_page.dart';
+class LaundryRoomQuizPage extends StatefulWidget {
+  const LaundryRoomQuizPage({Key? key}) : super(key: key);
 
   @override
-  State<LivingRoomsAndBedroomsQuizPage> createState() => _LivingRoomsAndBedroomsQuizPage();
+  State<LaundryRoomQuizPage> createState() => _LaundryRoomQuizPage();
 }
-List<bool> isChecked = List<bool>.filled(5, false);
-class _LivingRoomsAndBedroomsQuizPage extends State<LivingRoomsAndBedroomsQuizPage> {
+List<bool> isChecked = List<bool>.filled(3, false);
+int numCheckboxes = 3;
+class _LaundryRoomQuizPage extends State<LaundryRoomQuizPage> {
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +24,25 @@ class _LivingRoomsAndBedroomsQuizPage extends State<LivingRoomsAndBedroomsQuizPa
             padding: EdgeInsets.only(top: 100),
             child: ListView(
                 children: [
-                  Padding(
-                      padding: EdgeInsets.only(left: 20),
-                      child: Text(AppLocalizations.of(context)!.living_rooms_and_bedrooms_quiz_page_title,textScaleFactor: 3)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Padding(
+                          padding: EdgeInsets.only(left: 20),
+                          child: Text(AppLocalizations.of(context)!.laundry_room_quiz_page_title,textScaleFactor: 3)
+                      ),
+                      Padding(
+                          padding: EdgeInsets.only(right: 20),
+                          child: TextButton(
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                  return const HeatingEquipmentQuizPage();
+                                }));
+                                total -= numCheckboxes;
+                              },
+                              child: const Text('Skip (I don\'t have one)'))
+                      )
+                    ],
                   ),
                   Padding(
                       padding: EdgeInsets.only(right: 20),
@@ -36,7 +52,7 @@ class _LivingRoomsAndBedroomsQuizPage extends State<LivingRoomsAndBedroomsQuizPa
                       )
                   ),
                   CheckboxListTile(
-                      title: Text(AppLocalizations.of(context)!.living_rooms_and_bedrooms_quiz_page_checkbox2),
+                      title: Text(AppLocalizations.of(context)!.laundry_room_quiz_page_checkbox1),
                       checkColor: Colors.white,
                       value: isChecked[0],
                       onChanged: (bool? value) {
@@ -52,7 +68,7 @@ class _LivingRoomsAndBedroomsQuizPage extends State<LivingRoomsAndBedroomsQuizPa
                       controlAffinity: ListTileControlAffinity.leading
                   ),
                   CheckboxListTile(
-                      title: Text(AppLocalizations.of(context)!.living_rooms_and_bedrooms_quiz_page_checkbox5),
+                      title: Text(AppLocalizations.of(context)!.laundry_room_quiz_page_checkbox2),
                       checkColor: Colors.white,
                       value: isChecked[1],
                       onChanged: (bool? value) {
@@ -68,45 +84,13 @@ class _LivingRoomsAndBedroomsQuizPage extends State<LivingRoomsAndBedroomsQuizPa
                       controlAffinity: ListTileControlAffinity.leading
                   ),
                   CheckboxListTile(
-                      title: Text(AppLocalizations.of(context)!.living_rooms_and_bedrooms_quiz_page_checkbox2),
+                      title: Text(AppLocalizations.of(context)!.laundry_room_quiz_page_checkbox3),
                       checkColor: Colors.white,
                       value: isChecked[2],
                       onChanged: (bool? value) {
                         setState(() {
                           isChecked[2] = value!;
                           if (isChecked[2]) {
-                            counter ++;
-                          } else {
-                            counter --;
-                          }
-                        });
-                      },
-                      controlAffinity: ListTileControlAffinity.leading
-                  ),
-                  CheckboxListTile(
-                      title: Text(AppLocalizations.of(context)!.living_rooms_and_bedrooms_quiz_page_checkbox4),
-                      checkColor: Colors.white,
-                      value: isChecked[3],
-                      onChanged: (bool? value) {
-                        setState(() {
-                          isChecked[3] = value!;
-                          if (isChecked[3]) {
-                            counter ++;
-                          } else {
-                            counter --;
-                          }
-                        });
-                      },
-                      controlAffinity: ListTileControlAffinity.leading
-                  ),
-                  CheckboxListTile(
-                      title: Text(AppLocalizations.of(context)!.living_rooms_and_bedrooms_quiz_page_checkbox5),
-                      checkColor: Colors.white,
-                      value: isChecked[4],
-                      onChanged: (bool? value) {
-                        setState(() {
-                          isChecked[4] = value!;
-                          if (isChecked[4]) {
                             counter ++;
                           } else {
                             counter --;
@@ -123,7 +107,7 @@ class _LivingRoomsAndBedroomsQuizPage extends State<LivingRoomsAndBedroomsQuizPa
                           child: TextButton(
                               onPressed: () {
                                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                                  return const HeatingEquipmentQuizPage();
+                                  return const ElectricityAndAppliancesQuizPage();
                                 }));
                               },
                               child: const Text('Prev'))
@@ -133,7 +117,7 @@ class _LivingRoomsAndBedroomsQuizPage extends State<LivingRoomsAndBedroomsQuizPa
                           child: TextButton(
                               onPressed: () {
                                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                                  return const HomePage();
+                                  return const HeatingEquipmentQuizPage();
                                 }));
                               },
                               child: const Text('Next'))
