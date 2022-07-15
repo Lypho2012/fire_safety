@@ -23,7 +23,7 @@ class QuizPage extends StatelessWidget {
                         return const HomePage();
                       }));
                     },
-                    child: const Text('Skip quiz')),
+                    child: const Text('Skip')),
                 Text('Quiz',textScaleFactor: 3),
                 Center(child: TextButton(
                     onPressed: () {
