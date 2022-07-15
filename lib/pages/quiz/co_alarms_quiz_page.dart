@@ -24,7 +24,7 @@ class _COAlarmsQuizPage extends State<COAlarmsQuizPage> {
                 children: [
                   Padding(
                       padding: EdgeInsets.only(left: 20),
-                      child: Text(AppLocalizations.of(context)!.co_alarms_quiz_page_title,textScaleFactor: 3)
+                      child: Text(AppLocalizations.of(context)!.co_alarms_quiz_page_title,textScaleFactor: 2)
                   ),
                   Padding(
                       padding: EdgeInsets.only(right: 20),

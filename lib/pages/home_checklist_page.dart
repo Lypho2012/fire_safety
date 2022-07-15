@@ -1,5 +1,7 @@
 import 'package:fire_safety/pages/quiz/laundry_room_quiz_page.dart' as laundry_room_quiz_page;
 import 'package:fire_safety/pages/quiz/smoke_alarms_quiz_page.dart' as smoke_alarms_quiz_page;
+import 'package:fire_safety/pages/quiz/home_exterior_quiz_page.dart' as home_exterior_quiz_page;
+import 'package:fire_safety/pages/quiz_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -24,8 +26,42 @@ class _HomeChecklistPage extends State<HomeChecklistPage> {
                   Text(AppLocalizations.of(context)!.home_checklist_page_title,textScaleFactor: 3),
                   Text(AppLocalizations.of(context)!.home_exterior_quiz_page_title),
                   Visibility(
-                      visible: smoke_alarms_quiz_page.isChecked[0],
-                      child: Text('true')
+                      visible: !home_exterior_quiz_page.isChecked[0],
+                      child: CheckboxListTile(
+                          title: Text(AppLocalizations.of(context)!.home_exterior_quiz_page_checkbox1),
+                          checkColor: Colors.white,
+                          value: home_exterior_quiz_page.isChecked[0],
+                          onChanged: (bool? value) {
+                            setState(() {
+                              home_exterior_quiz_page.isChecked[0] = value!;
+                              if (home_exterior_quiz_page.isChecked[0]) {
+                                counter ++;
+                              } else {
+                                counter --;
+                              }
+                            });
+                          },
+                          controlAffinity: ListTileControlAffinity.leading
+                      )
+                  ),
+                  Visibility(
+                      visible: !home_exterior_quiz_page.isChecked[1],
+                      child: CheckboxListTile(
+                          title: Text(AppLocalizations.of(context)!.home_exterior_quiz_page_checkbox2),
+                          checkColor: Colors.white,
+                          value: home_exterior_quiz_page.isChecked[1],
+                          onChanged: (bool? value) {
+                            setState(() {
+                              home_exterior_quiz_page.isChecked[1] = value!;
+                              if (home_exterior_quiz_page.isChecked[1]) {
+                                counter ++;
+                              } else {
+                                counter --;
+                              }
+                            });
+                          },
+                          controlAffinity: ListTileControlAffinity.leading
+                      )
                   )
                 ])
         )
