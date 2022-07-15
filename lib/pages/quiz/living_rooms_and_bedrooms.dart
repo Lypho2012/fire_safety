@@ -26,7 +26,7 @@ class _LivingRoomsAndBedroomsQuizPage extends State<LivingRoomsAndBedroomsQuizPa
                 children: [
                   Padding(
                       padding: EdgeInsets.only(left: 20),
-                      child: Text(AppLocalizations.of(context)!.living_rooms_and_bedrooms_quiz_page_title,textScaleFactor: 3)
+                      child: Text(AppLocalizations.of(context)!.living_rooms_and_bedrooms_quiz_page_title,textScaleFactor: 2)
                   ),
                   Padding(
                       padding: EdgeInsets.only(right: 20),
