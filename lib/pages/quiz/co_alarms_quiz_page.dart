@@ -12,7 +12,8 @@ class COAlarmsQuizPage extends StatefulWidget {
   @override
   State<COAlarmsQuizPage> createState() => _COAlarmsQuizPage();
 }
-List<bool> isChecked = List<bool>.filled(5, false);
+int numCheckboxes = 5;
+List<bool> isChecked = List<bool>.filled(numCheckboxes, false);
 class _COAlarmsQuizPage extends State<COAlarmsQuizPage> {
 
   @override

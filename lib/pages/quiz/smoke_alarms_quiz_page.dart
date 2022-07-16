@@ -13,7 +13,8 @@ class SmokeAlarmsQuizPage extends StatefulWidget {
   State<SmokeAlarmsQuizPage> createState() => _SmokeAlarmsQuizPage();
 }
 
-List<bool> isChecked = List<bool>.filled(8, false);
+int numCheckboxes = 8;
+List<bool> isChecked = List<bool>.filled(numCheckboxes, false);
 class _SmokeAlarmsQuizPage extends State<SmokeAlarmsQuizPage> {
 
   @override

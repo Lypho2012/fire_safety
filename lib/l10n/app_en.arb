@@ -57,5 +57,6 @@
     "home_page_title": "Home",
     "notifications_page_title": "Notifications",
     "settings_page_title": "Settings",
-    "home_checklist_page_title": "Home"
+    "home_checklist_page_title": "Home",
+    "home_checklist_page_finished": "Finished"
 }

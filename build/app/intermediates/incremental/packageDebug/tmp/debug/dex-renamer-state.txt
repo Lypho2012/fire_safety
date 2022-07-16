@@ -1,0 +1,4 @@
+#Sat Jul 16 10:03:53 PDT 2022
+base.0=/Users/zhang/AndroidStudioProjects/fire_safety/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -13,8 +13,9 @@ class LaundryRoomQuizPage extends StatefulWidget {
   @override
   State<LaundryRoomQuizPage> createState() => _LaundryRoomQuizPage();
 }
-List<bool> isChecked = List<bool>.filled(3, false);
 int numCheckboxes = 3;
+bool skipped = false;
+List<bool> isChecked = List<bool>.filled(numCheckboxes, false);
 class _LaundryRoomQuizPage extends State<LaundryRoomQuizPage> {
 
   @override
@@ -39,6 +40,7 @@ class _LaundryRoomQuizPage extends State<LaundryRoomQuizPage> {
                                   return const HeatingEquipmentQuizPage();
                                 }));
                                 total -= numCheckboxes;
+                                skipped = true;
                               },
                               child: const Text('Skip (I don\'t have one)'))
                       )

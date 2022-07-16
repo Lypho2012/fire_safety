@@ -14,7 +14,8 @@ class HeatingEquipmentQuizPage extends StatefulWidget {
   @override
   State<HeatingEquipmentQuizPage> createState() => _HeatingEquipmentQuizPage();
 }
-List<bool> isChecked = List<bool>.filled(5, false);
+int numCheckboxes = 5;
+List<bool> isChecked = List<bool>.filled(numCheckboxes, false);
 class _HeatingEquipmentQuizPage extends State<HeatingEquipmentQuizPage> {
 
   @override

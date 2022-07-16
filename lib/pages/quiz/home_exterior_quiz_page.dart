@@ -11,8 +11,9 @@ class HomeExteriorQuizPage extends StatefulWidget {
   @override
   State<HomeExteriorQuizPage> createState() => _HomeExteriorQuizPage();
 }
-List<bool> isChecked = List<bool>.filled(4, false);
 int numCheckboxes = 4;
+bool skipped = false;
+List<bool> isChecked = List<bool>.filled(numCheckboxes, false);
 class _HomeExteriorQuizPage extends State<HomeExteriorQuizPage> {
 
   @override
@@ -37,6 +38,7 @@ class _HomeExteriorQuizPage extends State<HomeExteriorQuizPage> {
                                 return const SmokeAlarmsQuizPage();
                               }));
                               total -= numCheckboxes;
+                              skipped = true;
                             },
                             child: const Text('Skip (I live in an apartment)'))
                     )
