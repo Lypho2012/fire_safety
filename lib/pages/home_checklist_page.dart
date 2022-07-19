@@ -24,7 +24,7 @@ class _HomeChecklistPage extends State<HomeChecklistPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             child: ListView(
                 children: [
                   Text(AppLocalizations.of(context)!.home_checklist_page_title,textScaleFactor: 2),

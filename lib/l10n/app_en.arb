@@ -58,5 +58,13 @@
     "notifications_page_title": "Notifications",
     "settings_page_title": "Settings",
     "home_checklist_page_title": "Home",
-    "home_checklist_page_finished": "Finished"
+    "home_checklist_page_finished": "Finished",
+    "resources_page_title": "Resources",
+
+    "resources_page_link1": "National Fire Protection Association (NFPA)",
+    "resources_page_link2": "Pacific Gas & Electric (PG&E)",
+    "resources_page_link3": "Safe Kids",
+    "resources_page_link4": "Santa Clara County Fire Department",
+    "resources_page_link5": "Santa Clara County Fire Safe Council",
+    "resources_page_link6": "Santa Clara County Fire Safe Council"
 }

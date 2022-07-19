@@ -16,7 +16,7 @@ class _ChooseLanguagePage extends State<ChooseLanguagePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-            padding: EdgeInsets.only(top:100),
+            padding: EdgeInsets.all(100),
             child: Column(
                 children: [
                   Text('Welcome!'),

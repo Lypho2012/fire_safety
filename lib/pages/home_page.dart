@@ -1,6 +1,7 @@
 import 'package:fire_safety/pages/quiz/heating_equipment_quiz_page.dart';
 import 'package:fire_safety/pages/quiz/smoke_alarms_quiz_page.dart';
 import 'package:fire_safety/pages/quiz_page.dart';
+import 'package:fire_safety/pages/resources_page.dart';
 import 'package:fire_safety/pages/settings_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -22,25 +23,27 @@ class _HomePage extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        initialIndex: 1,
-        length: 4,
+        initialIndex: 0,
+        length: 5,
         child: Scaffold(
             appBar: AppBar(
               title: Text(AppLocalizations.of(context)!.home_page_title),
-              bottom: TabBar(
+              bottom: const TabBar(
                   tabs: [
-                    Tab(text: "home"), // TODO: replace with home icon
-                    Tab(text: "quiz"), // TODO: replace with quiz icon
-                    Tab(text: "notifications"), // TODO: replace with notifications icon
-                    Tab(text: "settings") // TODO: replace with settings icon
+                    Icon(Icons.home),
+                    Icon(Icons.assignment),
+                    Icon(Icons.notifications),
+                    Icon(Icons.link),
+                    Icon(Icons.settings)
                   ]
               ),
             ),
-            body: TabBarView(
+            body: const TabBarView(
                 children: [
                   HomeChecklistPage(),
                   QuizPage(title: ''),
                   NotificationsPage(),
+                  ResourcesPage(),
                   SettingsPage()
                 ]
             )

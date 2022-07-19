@@ -165,4 +165,25 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get home_checklist_page_finished => 'Finished';
+
+  @override
+  String get resources_page_title => 'Resources';
+
+  @override
+  String get resources_page_link1 => 'National Fire Protection Association (NFPA)';
+
+  @override
+  String get resources_page_link2 => 'Pacific Gas & Electric (PG&E)';
+
+  @override
+  String get resources_page_link3 => 'Safe Kids';
+
+  @override
+  String get resources_page_link4 => 'Santa Clara County Fire Department';
+
+  @override
+  String get resources_page_link5 => 'Santa Clara County Fire Safe Council';
+
+  @override
+  String get resources_page_link6 => 'Santa Clara County Fire Safe Council';
 }

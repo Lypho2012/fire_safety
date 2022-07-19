@@ -411,6 +411,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Finished'**
   String get home_checklist_page_finished;
+
+  /// No description provided for @resources_page_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Resources'**
+  String get resources_page_title;
+
+  /// No description provided for @resources_page_link1.
+  ///
+  /// In en, this message translates to:
+  /// **'National Fire Protection Association (NFPA)'**
+  String get resources_page_link1;
+
+  /// No description provided for @resources_page_link2.
+  ///
+  /// In en, this message translates to:
+  /// **'Pacific Gas & Electric (PG&E)'**
+  String get resources_page_link2;
+
+  /// No description provided for @resources_page_link3.
+  ///
+  /// In en, this message translates to:
+  /// **'Safe Kids'**
+  String get resources_page_link3;
+
+  /// No description provided for @resources_page_link4.
+  ///
+  /// In en, this message translates to:
+  /// **'Santa Clara County Fire Department'**
+  String get resources_page_link4;
+
+  /// No description provided for @resources_page_link5.
+  ///
+  /// In en, this message translates to:
+  /// **'Santa Clara County Fire Safe Council'**
+  String get resources_page_link5;
+
+  /// No description provided for @resources_page_link6.
+  ///
+  /// In en, this message translates to:
+  /// **'Santa Clara County Fire Safe Council'**
+  String get resources_page_link6;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -12,19 +12,18 @@ class NotificationsPage extends StatefulWidget {
   @override
   State<NotificationsPage> createState() => _NotificationsPage();
 }
-List<bool> isChecked = List<bool>.filled(5, false);
 class _NotificationsPage extends State<NotificationsPage> {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-            padding: EdgeInsets.only(top: 20),
+            padding: const EdgeInsets.only(top: 20),
             child: ListView(
                 children: [
                   Padding(
-                      padding: EdgeInsets.only(left: 20),
-                      child: Text(AppLocalizations.of(context)!.notifications_page_title,textScaleFactor: 3)
+                      padding: const EdgeInsets.only(left: 20),
+                      child: Text(AppLocalizations.of(context)!.notifications_page_title,textScaleFactor: 2)
                   )
                 ])
         )

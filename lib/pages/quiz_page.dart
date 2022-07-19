@@ -14,7 +14,7 @@ class QuizPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-          padding: EdgeInsets.only(top: 100),
+          padding: const EdgeInsets.all(100),
           child: Column(
               children: [
                 TextButton(
@@ -23,8 +23,9 @@ class QuizPage extends StatelessWidget {
                         return const HomePage();
                       }));
                     },
-                    child: const Text('Skip')),
-                Text('Quiz',textScaleFactor: 3),
+                    child: const Text('Skip')
+                ), // TODO: remove after done debugging
+                const Text('Quiz',textScaleFactor: 3),
                 Center(child: TextButton(
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (context) {

@@ -17,57 +17,87 @@
 15-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/debug/AndroidManifest.xml:7:22-64
 16
 17    <application
-18        android:name="android.app.Application"
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.6.0] /Users/zhang/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
-20        android:debuggable="true"
-21        android:icon="@mipmap/ic_launcher"
-22        android:label="fire_safety" >
-23        <activity
-24            android:name="com.example.fire_safety.MainActivity"
-25            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-26            android:exported="true"
-27            android:hardwareAccelerated="true"
-28            android:launchMode="singleTop"
-29            android:theme="@style/LaunchTheme"
-30            android:windowSoftInputMode="adjustResize" >
-31
-32            <!--
-33                 Specifies an Android theme to apply to this Activity as soon as
-34                 the Android process has started. This theme is visible to the user
-35                 while the Flutter UI initializes. After that, this theme continues
-36                 to determine the Window background behind the Flutter UI.
-37            -->
-38            <meta-data
-39                android:name="io.flutter.embedding.android.NormalTheme"
-40                android:resource="@style/NormalTheme" />
-41
-42            <intent-filter>
-43                <action android:name="android.intent.action.MAIN" />
-44
-45                <category android:name="android.intent.category.LAUNCHER" />
-46            </intent-filter>
-47        </activity>
-48        <!--
-49             Don't delete the meta-data below.
-50             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-51        -->
-52        <meta-data
-53            android:name="flutterEmbedding"
-54            android:value="2" />
-55
-56        <uses-library
-56-->[androidx.window:window:1.0.0-beta04] /Users/zhang/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-57            android:name="androidx.window.extensions"
-57-->[androidx.window:window:1.0.0-beta04] /Users/zhang/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-58            android:required="false" />
-58-->[androidx.window:window:1.0.0-beta04] /Users/zhang/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-59        <uses-library
-59-->[androidx.window:window:1.0.0-beta04] /Users/zhang/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-60            android:name="androidx.window.sidecar"
-60-->[androidx.window:window:1.0.0-beta04] /Users/zhang/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-61            android:required="false" />
-61-->[androidx.window:window:1.0.0-beta04] /Users/zhang/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-62    </application>
-63
-64</manifest>
+17-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:3:4-32:19
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.6.0] /Users/zhang/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:label="fire_safety"
+20-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:4:9-36
+21        android:usesCleartextTraffic="true" >
+21-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:5:9-44
+22        <activity
+22-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:6:9-26:20
+23            android:name="com.example.fire_safety.MainActivity"
+23-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:7:13-41
+24            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+24-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:11:13-163
+25            android:exported="true"
+25-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:8:13-36
+26            android:hardwareAccelerated="true"
+26-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:12:13-47
+27            android:launchMode="singleTop"
+27-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:9:13-43
+28            android:theme="@style/LaunchTheme"
+28-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:10:13-47
+29            android:windowSoftInputMode="adjustResize" >
+29-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:13:13-55
+30
+31            <!--
+32                 Specifies an Android theme to apply to this Activity as soon as
+33                 the Android process has started. This theme is visible to the user
+34                 while the Flutter UI initializes. After that, this theme continues
+35                 to determine the Window background behind the Flutter UI.
+36            -->
+37            <meta-data
+37-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:18:13-21:17
+38                android:name="io.flutter.embedding.android.NormalTheme"
+38-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:19:15-70
+39                android:resource="@style/NormalTheme" />
+39-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:20:15-52
+40
+41            <intent-filter>
+41-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:22:13-25:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:23:17-68
+42-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:23:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:24:17-76
+44-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:24:27-74
+45            </intent-filter>
+46        </activity>
+47        <!--
+48             Don't delete the meta-data below.
+49             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+50        -->
+51        <meta-data
+51-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:29:9-31:33
+52            android:name="flutterEmbedding"
+52-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:30:13-44
+53            android:value="2" />
+53-->/Users/zhang/AndroidStudioProjects/fire_safety/android/app/src/main/AndroidManifest.xml:31:13-30
+54
+55        <activity
+55-->[:url_launcher_android] /Users/zhang/AndroidStudioProjects/fire_safety/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+56            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+56-->[:url_launcher_android] /Users/zhang/AndroidStudioProjects/fire_safety/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+57            android:exported="false"
+57-->[:url_launcher_android] /Users/zhang/AndroidStudioProjects/fire_safety/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+58            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+58-->[:url_launcher_android] /Users/zhang/AndroidStudioProjects/fire_safety/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+59
+60        <uses-library
+60-->[androidx.window:window:1.0.0-beta04] /Users/zhang/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+61            android:name="androidx.window.extensions"
+61-->[androidx.window:window:1.0.0-beta04] /Users/zhang/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+62            android:required="false" />
+62-->[androidx.window:window:1.0.0-beta04] /Users/zhang/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+63        <uses-library
+63-->[androidx.window:window:1.0.0-beta04] /Users/zhang/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+64            android:name="androidx.window.sidecar"
+64-->[androidx.window:window:1.0.0-beta04] /Users/zhang/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+65            android:required="false" />
+65-->[androidx.window:window:1.0.0-beta04] /Users/zhang/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+66    </application>
+67
+68</manifest>

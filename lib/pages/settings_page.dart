@@ -19,13 +19,10 @@ class _SettingsPage extends State<SettingsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-            padding: EdgeInsets.only(top: 20),
+            padding: const EdgeInsets.all(20),
             child: ListView(
                 children: [
-                  Padding(
-                      padding: EdgeInsets.only(left: 20),
-                      child: Text(AppLocalizations.of(context)!.settings_page_title,textScaleFactor: 3)
-                  )
+                  Text(AppLocalizations.of(context)!.settings_page_title,textScaleFactor: 2)
                 ])
         )
     );
