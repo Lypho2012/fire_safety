@@ -16,8 +16,9 @@ class _ChooseLanguagePage extends State<ChooseLanguagePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-            padding: EdgeInsets.all(100),
+            padding: EdgeInsets.only(top:100),
             child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text('Welcome!'),
                   Text('Choose a language to continue in:'),
@@ -52,7 +53,8 @@ class _ChooseLanguagePage extends State<ChooseLanguagePage> {
                         }));
                       },
                       child: const Text('Next'))
-                ])
+                ]
+            )
         )
     );
   }

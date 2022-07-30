@@ -32,8 +32,7 @@ class _LaundryRoomQuizPage extends State<LaundryRoomQuizPage> {
                           padding: EdgeInsets.only(left: 20),
                           child: Text(AppLocalizations.of(context)!.laundry_room_quiz_page_title,textScaleFactor: 2)
                       ),
-                      Padding(
-                          padding: EdgeInsets.only(right: 20),
+                      Expanded(
                           child: TextButton(
                               onPressed: () {
                                 Navigator.push(context, MaterialPageRoute(builder: (context) {
