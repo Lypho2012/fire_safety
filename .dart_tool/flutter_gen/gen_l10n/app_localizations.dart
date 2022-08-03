@@ -94,6 +94,24 @@ abstract class AppLocalizations {
     Locale('es')
   ];
 
+  /// No description provided for @next_button.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get next_button;
+
+  /// No description provided for @prev_button.
+  ///
+  /// In en, this message translates to:
+  /// **'Prev'**
+  String get prev_button;
+
+  /// No description provided for @score.
+  ///
+  /// In en, this message translates to:
+  /// **'Score'**
+  String get score;
+
   /// No description provided for @home_exterior_quiz_page_title.
   ///
   /// In en, this message translates to:
@@ -123,6 +141,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Remove leaves/debris from roof, eaves and gutters'**
   String get home_exterior_quiz_page_checkbox4;
+
+  /// No description provided for @home_exterior_quiz_page_skip_button.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip (I live in an apartment)'**
+  String get home_exterior_quiz_page_skip_button;
 
   /// No description provided for @smoke_alarms_quiz_page_title.
   ///
@@ -310,6 +334,12 @@ abstract class AppLocalizations {
   /// **'Foil or plastic accordion-type ducting material has been replaced with rigid or semi-rigid metal duct'**
   String get laundry_room_quiz_page_checkbox3;
 
+  /// No description provided for @laundry_room_quiz_page_skip_button.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip (I don\'t have one)'**
+  String get laundry_room_quiz_page_skip_button;
+
   /// No description provided for @heating_equipment_quiz_page_title.
   ///
   /// In en, this message translates to:
@@ -453,6 +483,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Santa Clara County Fire Safe Council'**
   String get resources_page_link6;
+
+  /// No description provided for @notifications_page_reminder1.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder: test smoke alarms'**
+  String get notifications_page_reminder1;
+
+  /// No description provided for @notifications_page_reminder2.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder: go through safety checklist and practice fire drills'**
+  String get notifications_page_reminder2;
+
+  /// No description provided for @notifications_page_reminder3.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder: check fire extinguishers'**
+  String get notifications_page_reminder3;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -8,6 +8,15 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
+  String get next_button => 'Next';
+
+  @override
+  String get prev_button => 'Prev';
+
+  @override
+  String get score => 'Score';
+
+  @override
   String get home_exterior_quiz_page_title => 'Home Exterior';
 
   @override
@@ -21,6 +30,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get home_exterior_quiz_page_checkbox4 => 'Remove leaves/debris from roof, eaves and gutters';
+
+  @override
+  String get home_exterior_quiz_page_skip_button => 'Skip (I live in an apartment)';
 
   @override
   String get smoke_alarms_quiz_page_title => 'Smoke Alarms';
@@ -116,6 +128,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get laundry_room_quiz_page_checkbox3 => 'Foil or plastic accordion-type ducting material has been replaced with rigid or semi-rigid metal duct';
 
   @override
+  String get laundry_room_quiz_page_skip_button => 'Skip (I don\'t have one)';
+
+  @override
   String get heating_equipment_quiz_page_title => 'Heating Equipment';
 
   @override
@@ -186,4 +201,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get resources_page_link6 => 'Santa Clara County Fire Safe Council';
+
+  @override
+  String get notifications_page_reminder1 => 'Reminder: test smoke alarms';
+
+  @override
+  String get notifications_page_reminder2 => 'Reminder: go through safety checklist and practice fire drills';
+
+  @override
+  String get notifications_page_reminder3 => 'Reminder: check fire extinguishers';
 }

@@ -39,7 +39,7 @@ class _HomeExteriorQuizPage extends State<HomeExteriorQuizPage> {
                               total -= numCheckboxes;
                               skipped = true;
                             },
-                            child: const Text('Skip (I live in an apartment)')
+                            child: Text(AppLocalizations.of(context)!.home_exterior_quiz_page_skip_button)
                         )
                     )
                   ],
@@ -48,7 +48,7 @@ class _HomeExteriorQuizPage extends State<HomeExteriorQuizPage> {
                   padding: EdgeInsets.only(right: 20),
                   child: Align(
                       alignment: Alignment.topRight,
-                      child: Text("Score: $counter / $total")
+                      child: Text(AppLocalizations.of(context)!.score+": $counter / $total")
                   )
                 ),
                 CheckboxListTile(
@@ -125,7 +125,7 @@ class _HomeExteriorQuizPage extends State<HomeExteriorQuizPage> {
                                 return const SmokeAlarmsQuizPage();
                               }));
                             },
-                            child: const Text('Next'))
+                            child: Text(AppLocalizations.of(context)!.next_button))
                     )
                 )
               ])
