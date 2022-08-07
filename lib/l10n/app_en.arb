@@ -1,9 +1,13 @@
 {
+    "next_button": "Next",
+    "prev_button": "Prev",
+    "score": "Score",
     "home_exterior_quiz_page_title": "Home Exterior",
     "home_exterior_quiz_page_checkbox1": "Ensure home address numbers are a minimum of 4 inches tall and clearly visible from the street",
     "home_exterior_quiz_page_checkbox2": "For homes located more than 50 feet from the street, post address numbers at the driveway entrance",
     "home_exterior_quiz_page_checkbox3": "Trim trees away from overhead electrical wires and chimney",
     "home_exterior_quiz_page_checkbox4": "Remove leaves/debris from roof, eaves and gutters",
+    "home_exterior_quiz_page_skip_button": "Skip (I live in an apartment)",
 
     "smoke_alarms_quiz_page_title": "Smoke Alarms",
     "smoke_alarms_quiz_page_checkbox1": "Different types of smoke alarms, ionization and photoelectric, detect fire in different ways. Experts recommend having both types in your home",
@@ -39,6 +43,7 @@
     "laundry_room_quiz_page_checkbox1": "People clean the dryer of lint after every use",
     "laundry_room_quiz_page_checkbox2": "There is no lint build-up in the exhaust duct or behind the dryer",
     "laundry_room_quiz_page_checkbox3": "Foil or plastic accordion-type ducting material has been replaced with rigid or semi-rigid metal duct",
+    "laundry_room_quiz_page_skip_button": "Skip (I don't have one)",
 
     "heating_equipment_quiz_page_title": "Heating Equipment",
     "heating_equipment_quiz_page_checkbox1": "Do not use propane heaters inside the home or use the oven to heat the home",
@@ -66,5 +71,9 @@
     "resources_page_link3": "Safe Kids",
     "resources_page_link4": "Santa Clara County Fire Department",
     "resources_page_link5": "Santa Clara County Fire Safe Council",
-    "resources_page_link6": "Santa Clara County Fire Safe Council"
+    "resources_page_link6": "Santa Clara County Fire Safe Council",
+
+    "notifications_page_reminder1": "Reminder: test smoke alarms",
+    "notifications_page_reminder2": "Reminder: go through safety checklist and practice fire drills",
+    "notifications_page_reminder3": "Reminder: check fire extinguishers"
 }

@@ -61,7 +61,7 @@ class NotificationService {
       threadIdentifier: String?
   );
 
-  const NotificationDetails platformChannelSpecifics =
+  NotificationDetails platformChannelSpecifics =
   NotificationDetails(
       android: _androidNotificationDetails,
       iOS: _iOSNotificationDetails);

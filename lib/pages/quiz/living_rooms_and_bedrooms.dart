@@ -33,7 +33,7 @@ class _LivingRoomsAndBedroomsQuizPage extends State<LivingRoomsAndBedroomsQuizPa
                       padding: EdgeInsets.only(right: 20),
                       child: Align(
                           alignment: Alignment.topRight,
-                          child: Text("Score: $counter / 41")
+                          child: Text(AppLocalizations.of(context)!.score+": $counter / 41")
                       )
                   ),
                   CheckboxListTile(
@@ -127,7 +127,7 @@ class _LivingRoomsAndBedroomsQuizPage extends State<LivingRoomsAndBedroomsQuizPa
                                   return const HeatingEquipmentQuizPage();
                                 }));
                               },
-                              child: const Text('Prev'))
+                              child: Text(AppLocalizations.of(context)!.prev_button))
                       ),
                       Padding(
                           padding: EdgeInsets.only(right: 20),
@@ -137,7 +137,7 @@ class _LivingRoomsAndBedroomsQuizPage extends State<LivingRoomsAndBedroomsQuizPa
                                   return const HomePage();
                                 }));
                               },
-                              child: const Text('Next'))
+                              child: Text(AppLocalizations.of(context)!.next_button))
                       )
                     ],
                   )

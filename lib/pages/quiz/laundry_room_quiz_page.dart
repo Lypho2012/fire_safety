@@ -41,7 +41,7 @@ class _LaundryRoomQuizPage extends State<LaundryRoomQuizPage> {
                                 total -= numCheckboxes;
                                 skipped = true;
                               },
-                              child: const Text('Skip (I don\'t have one)'))
+                              child: Text(AppLocalizations.of(context)!.laundry_room_quiz_page_skip_button))
                       )
                     ],
                   ),
@@ -49,7 +49,7 @@ class _LaundryRoomQuizPage extends State<LaundryRoomQuizPage> {
                       padding: EdgeInsets.only(right: 20),
                       child: Align(
                           alignment: Alignment.topRight,
-                          child: Text("Score: $counter / $total")
+                          child: Text(AppLocalizations.of(context)!.score+": $counter / $total")
                       )
                   ),
                   CheckboxListTile(
@@ -111,7 +111,7 @@ class _LaundryRoomQuizPage extends State<LaundryRoomQuizPage> {
                                   return const ElectricityAndAppliancesQuizPage();
                                 }));
                               },
-                              child: const Text('Prev'))
+                              child: Text(AppLocalizations.of(context)!.prev_button))
                       ),
                       Padding(
                           padding: EdgeInsets.only(right: 20),
@@ -121,7 +121,7 @@ class _LaundryRoomQuizPage extends State<LaundryRoomQuizPage> {
                                   return const HeatingEquipmentQuizPage();
                                 }));
                               },
-                              child: const Text('Next'))
+                              child: Text(AppLocalizations.of(context)!.next_button))
                       )
                     ],
                   )

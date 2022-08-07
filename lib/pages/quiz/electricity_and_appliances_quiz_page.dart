@@ -31,7 +31,7 @@ class _ElectricityAndAppliancesQuizPage extends State<ElectricityAndAppliancesQu
                       padding: EdgeInsets.only(right: 20),
                       child: Align(
                           alignment: Alignment.topRight,
-                          child: Text("Score: $counter / $total")
+                          child: Text(AppLocalizations.of(context)!.score+": $counter / $total")
                       )
                   ),
                   CheckboxListTile(
@@ -221,7 +221,7 @@ class _ElectricityAndAppliancesQuizPage extends State<ElectricityAndAppliancesQu
                                   return const COAlarmsQuizPage();
                                 }));
                               },
-                              child: const Text('Prev'))
+                              child: Text(AppLocalizations.of(context)!.prev_button))
                       ),
                       Padding(
                           padding: EdgeInsets.only(right: 20),
@@ -231,7 +231,7 @@ class _ElectricityAndAppliancesQuizPage extends State<ElectricityAndAppliancesQu
                                   return const LaundryRoomQuizPage();
                                 }));
                               },
-                              child: const Text('Next'))
+                              child: Text(AppLocalizations.of(context)!.next_button))
                       )
                     ],
                   )
