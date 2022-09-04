@@ -1,6 +1,6 @@
 # fire_safety
 
-A new Flutter application.
+An app for ensuring fire safety
 
 ## Getting Started
 
